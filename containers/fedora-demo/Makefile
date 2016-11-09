@@ -1,7 +1,7 @@
 all: build
 
 build:
-	docker build --tag master.turbot:5000/fedora:24-demo .
+	docker build --tag cloudgenius/fedora:24-demo .
 
 push: build
-	docker push master.turbot:5000/fedora:24-demo
+	docker push cloudgenius/fedora:24-demo

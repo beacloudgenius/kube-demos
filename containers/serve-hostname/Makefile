@@ -7,4 +7,4 @@ clean:
 	rm -f serve-hostname
 
 push:
-	docker build --tag master.turbot:5000/serve-hostname:latest . && docker push master.turbot:5000/serve-hostname:latest
+	docker build --tag cloudgenius/serve-hostname:latest . && docker push cloudgenius/serve-hostname:latest

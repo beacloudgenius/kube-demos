@@ -16,7 +16,7 @@
 . $(dirname ${BASH_SOURCE})/util.sh
 
 desc "Deploy an app the just serves the hostname"
-run "kubectl run demo --image=master.turbot:5000/serve-hostname:latest --replicas=2"
+run "kubectl run demo --image=cloudgenius/serve-hostname:latest --replicas=2"
 
 desc "Create a service for the app"
 run "cat $(relative resources/svc.yaml)" skip
