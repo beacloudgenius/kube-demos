@@ -33,4 +33,4 @@ spec:
           name: dns-tcp
           protocol: TCP
         args:
-        - --domain=kube.turbot
+        - --domain=kube.cloudgeni.us

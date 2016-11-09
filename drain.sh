@@ -22,13 +22,13 @@ desc "Pod are spread on different nodes"
 run "kubectl get pods -o yaml | grep nodeName:"
 
 desc "Drain node1"
-run "kubectl drain node1.turbot"
+run "kubectl drain node1.cloudgeni.us"
 
 desc "Pods are all on node2"
 run "kubectl get pods -o yaml | grep nodeName:"
 
 desc "Uncordon node1"
-run "kubectl uncordon node1.turbot"
+run "kubectl uncordon node1.cloudgeni.us"
 
 desc "Scale down, then back up (rescheduler in development)"
 run "kubectl scale deployments/demo --replicas=0" skip

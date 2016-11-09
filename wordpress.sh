@@ -46,7 +46,7 @@ run "cat $(relative resources/wordpress/svc.yaml)" skip
 run "kubectl create -f $(relative resources/wordpress/svc.yaml)"
 
 desc "Thus was conjured a wordpress site"
-xdg-open http://node1.turbot:8080 &>/dev/null
+xdg-open http://node1.cloudgeni.us:8080 &>/dev/null
 run ""
 
 desc "Let's wreck some havok"
@@ -86,4 +86,3 @@ run ""
 desc "For completeness force removal of completed recyclers (if not already removed)"
 run "kubectl delete pods recycler-for-pv01 recycler-for-pv02" skip
 run "kubectl delete pv --all" skip
-

@@ -30,5 +30,5 @@ run "kubectl describe service demo"
 
 tmux new -d -s my-session \
     "$(dirname ${BASH_SOURCE})/service-tmux.sh" \; \
-    split-window -v -d "$(dirname $BASH_SOURCE)/service-curl.sh demo.default.svc.kube.turbot" \; \
+    split-window -v -d "$(dirname $BASH_SOURCE)/service-curl.sh demo.default.svc.kube.cloudgeni.us" \; \
     attach \;
