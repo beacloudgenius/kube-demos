@@ -123,3 +123,13 @@ change
     KUBELET_API_SERVER="--api-servers=http://127.0.0.1:8080"
     to 
     KUBELET_API_SERVER="--api-servers=http://master.example.local:8080"
+
+and
+
+    vi /etc/sysconfig/flanneld
+    
+change
+
+    FLANNEL_ETCD="http://node1.example.local:2379"
+    to
+    FLANNEL_ETCD="http://master.example.local:2379"
