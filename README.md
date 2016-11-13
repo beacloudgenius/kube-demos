@@ -22,12 +22,12 @@ Create a node1
 192.168.122.155 master
 192.168.122.57 node1
 
-on node1
+#### on node1
 
 sudo dnf install -y kubernetes-node flannel
 
 
-on master
+#### on master
 
 cd /etc/kubernetes
 ls
@@ -53,3 +53,5 @@ You can also use ipaddress of this master instead of the name "master"
 
 
 systemctl restart kube-apiserver etcd
+
+sudo dnf install -y flannel
