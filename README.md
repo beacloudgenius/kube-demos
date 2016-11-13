@@ -133,3 +133,8 @@ change
     FLANNEL_ETCD="http://node1.example.local:2379"
     to
     FLANNEL_ETCD="http://master.example.local:2379"
+
+
+Now
+
+    systemctl enable --now flanneld docker kubelet kube-proxy
