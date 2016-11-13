@@ -57,7 +57,7 @@ systemctl restart kube-apiserver etcd
 sudo dnf install -y flannel
 
 
-cd /etc/sysconfig/flannel
+vi /etc/sysconfig/flanneld
 
 on master etcd is localhost
 on node etcd is on master
