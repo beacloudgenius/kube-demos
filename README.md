@@ -111,3 +111,15 @@ change
     KUBELET_ADDRESS="--address=127.0.0.1"
     to 
     KUBELET_ADDRESS="--address=0.0.0.0"
+
+change
+
+    KUBELET_HOSTNAME="--hostname-override=127.0.0.1"
+    to 
+    KUBELET_HOSTNAME="--hostname-override=node1.example.local"
+
+change
+
+    KUBELET_API_SERVER="--api-servers=http://127.0.0.1:8080"
+    to 
+    KUBELET_API_SERVER="--api-servers=http://master.example.local:8080"
