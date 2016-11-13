@@ -90,3 +90,14 @@ on node etcd is on master
     systemctl start flanneld
 
     systemctl status flanneld.service
+
+
+#### on node
+
+    vi /etc/kubernetes/config
+
+change
+
+    KUBE_MASTER="--master=http://127.0.0.1:8080"
+    to
+    KUBE_MASTER="--master=http://master.example.local:8080"
