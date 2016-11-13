@@ -33,6 +33,8 @@ change
     KUBE_API_ADDRESS="--insecure-bind-address=127.0.0.1"
     KUBE_API_ADDRESS="--insecure-bind-address=0.0.0.0"
 
+#### on master
+
     vi /etc/etcd/etcd.conf
 
 change
