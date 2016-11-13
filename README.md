@@ -19,8 +19,24 @@ kubectl exec -it demo bash
 
 
 Create a node1
-
+192.168.122.155 master
+192.168.122.57 node1
 
 on node1
 
-sudo dnf install -y kubernetes-node flanel
+sudo dnf install -y kubernetes-node flannel
+
+
+on master
+
+cd /etc/kubernetes
+ls
+vi apiserver
+change KUBE API ADDRESS to 0.0.0.0
+
+cd /etc/etcd
+vi etcd.conf
+
+change listen lclient uril to 0.0.0.0
+
+advertise client url to ipaddress of this node or by the name "master"
