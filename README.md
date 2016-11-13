@@ -7,3 +7,6 @@ systemctl enable --now etcd kube-apiserver kube-controller-manager kube-schedule
 open /etc/kubernetes/apiserver and remove "ServiceAccount" from the list of admission controllers
 
 vi /etc/kubernetes/apiserver
+
+systemctl restart kube-apiserver
+
