@@ -50,3 +50,6 @@ ETCD_ADVERTISE_CLIENT_URLS="http://localhost:2379"
 to
 ETCD_ADVERTISE_CLIENT_URLS="http://master:2379"
 You can also use ipaddress of this master instead of the name "master"
+
+
+systemctl restart kube-apiserver etcd
