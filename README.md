@@ -10,3 +10,8 @@ vi /etc/kubernetes/apiserver
 
 systemctl restart kube-apiserver
 
+kubectl get pod -w
+
+kubectl exec -it demo bash
+
+ 
