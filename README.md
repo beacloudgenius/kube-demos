@@ -79,6 +79,8 @@ vi flanneld-conf.json
 
 curl -L http://localhost:2379/v2/keys/atomic.io/network/config -XPUT --data-urlencode value@flanneld-conf.json
 
+curl -L http://nilesh.example.local:2379/v2/keys/atomic.io/network/config -XPUT --data-urlencode value@flanneld-conf.json
+
 
 etcdctl get /atomic.io/network/config
 
