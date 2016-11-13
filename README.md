@@ -61,3 +61,18 @@ vi /etc/sysconfig/flanneld
 
 on master etcd is localhost
 on node etcd is on master
+
+
+
+#### create flannel 
+
+flanneld-conf.json
+
+{
+  "Network": "172.16.0.0/12",
+  "SubnetLen: 24,
+  "Backend": {
+    "Type": "vxlan"
+  }
+}
+
