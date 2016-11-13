@@ -26,17 +26,14 @@ Create a node1
 
 #### on master
 
-    cd /etc/kubernetes
-    ls
-    vi apiserver
+    vi /etc/kubernetes/apiserver
 
 change
 
     KUBE_API_ADDRESS="--insecure-bind-address=127.0.0.1"
     KUBE_API_ADDRESS="--insecure-bind-address=0.0.0.0"
 
-    cd /etc/etcd
-    vi etcd.conf
+    vi /etc/etcd/etcd.conf
 
 change
 
