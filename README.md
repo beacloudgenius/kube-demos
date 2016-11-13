@@ -105,3 +105,9 @@ change
 and
 
     vi /etc/kubernetes/kubelet
+
+change
+ 
+    KUBELET_ADDRESS="--address=127.0.0.1"
+    to 
+    KUBELET_ADDRESS="--address=0.0.0.0"
