@@ -19,8 +19,8 @@ kubectl exec -it demo bash
 
 
 Create a node1
-192.168.122.155 nilesh.example.local
-192.168.122.57 slave.example.local
+192.168.122.164 master.example.local
+192.168.122.157 node1.example.local
 
 #### on node1
 
