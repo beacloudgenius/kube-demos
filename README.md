@@ -101,3 +101,7 @@ change
     KUBE_MASTER="--master=http://127.0.0.1:8080"
     to
     KUBE_MASTER="--master=http://master.example.local:8080"
+
+and
+
+    vi /etc/kubernetes/kubelet
