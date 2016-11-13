@@ -55,3 +55,9 @@ You can also use ipaddress of this master instead of the name "master"
 systemctl restart kube-apiserver etcd
 
 sudo dnf install -y flannel
+
+
+cd /etc/sysconfig/flannel
+
+on master etcd is localhost
+on node etcd is on master
