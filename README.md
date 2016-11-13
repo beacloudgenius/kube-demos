@@ -15,3 +15,12 @@ kubectl get pod -w
 kubectl exec -it demo bash
 
  
+
+
+
+Create a node1
+
+
+on node1
+
+sudo dnf install -y kubernetes-node flanel
