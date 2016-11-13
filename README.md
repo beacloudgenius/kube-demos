@@ -14,13 +14,13 @@ kubectl get pod -w
 
 kubectl exec -it demo bash
 
- 
+
 
 
 
 Create a node1
-192.168.122.155 master
-192.168.122.57 node1
+192.168.122.155 nilesh.example.local
+192.168.122.57 slave.example.local
 
 #### on node1
 
@@ -64,9 +64,9 @@ on node etcd is on master
 
 
 
-#### create flannel 
+#### create flannel
 
-flanneld-conf.json
+vi flanneld-conf.json
 
 {
   "Network": "172.16.0.0/12",
@@ -76,3 +76,15 @@ flanneld-conf.json
   }
 }
 
+
+curl -L http://localhost:2379/v2/keys/atomic.io/network/config -XPUT --data-urlencode value@flanneld-conf.json
+
+
+etcdctl get /atomic.io/network/config
+
+
+start flannel on master
+
+systemctl start flanneld
+
+systemctl status flanneld.service
