@@ -29,13 +29,17 @@ Create a node1
     cd /etc/kubernetes
     ls
     vi apiserver
+
 change
+
     KUBE_API_ADDRESS="--insecure-bind-address=127.0.0.1"
     KUBE_API_ADDRESS="--insecure-bind-address=0.0.0.0"
 
     cd /etc/etcd
     vi etcd.conf
-    change
+
+change
+
     ETCD_LISTEN_CLIENT_URLS="http://localhost:2379"
     to
     ETCD_LISTEN_CLIENT_URLS="http://0.0.0.0:2379"
